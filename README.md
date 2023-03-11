@@ -46,10 +46,9 @@ ___________________________________________________________________________
 
 	Informations Complémentaires :
 
-Langage de programmation : Python
-
-Version : 3.10
-IDE : VS Code
+Langage de programmation : Python<br/>
+Version : 3.10<br/>
+IDE : VS Code<br/>
 Librairies : Tkinter, Random, TTK, Logging, Pronotepy, Traceback, Os
 Compileur .exe : Auto-py-to-exe
 Logiciel IU : PAGE
