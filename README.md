@@ -1,38 +1,4 @@
 # AutoBulletin
-Librairies utilisées :
-Tkinter
-TTK (Tkinter)
-Random
-
-looking to incorporate :
-os
-pronotepy
-(autre à venir)
-
-Le dossier contient toutes les ressources de développement y compris les codes sources en + de la version .exe.
-
-Les fichiers d'interface .tcl sont à ouvrir avec le logiciel PAGE disponile au lien sourceforge suivant :
-https://sourceforge.net/projects/page/
-
-Notez que l'interface n'est pas des plus modernes pour le moment. Libre à vous de comuniquer sur le design que vous souhaitez.
-
-Pour tout contact / renseignement :
-labarbe.leo2308@gmail.com
-(mail personnel assurant une réponse)
-
-Avertissement :
-Le script combobox_script.py provient d'un projet tiers que j'ai mené, c'est pourquoi les valeurs indiqués ne sont pas cohérentes.
-
---- FONCTIONNALITES ---
-
-L'application dispose e fonctionnalités diverses comme le tri des classes ou également une mémoire des résultats des élèves au précédent trimestre pour jouer sur l'appréciation.
-
-Un module de customisation sera implémenté dans une mise à jour future.
-Pour le moment, le but principal est un fonctionnement du software tout en l'optimisant.
-
-NOUVEAUX UI EN COURS DE DESIGN !!!
-
-
 ___________________________________________________________________________
 
 	Fonctionnalités :
@@ -41,8 +7,10 @@ ___________________________________________________________________________
 Le système repose sur des sauvegardes dans des fichiers .txt locaux. La customisation permet de changer les couleurs, la police, la taille de cette dernière, les actions au survol, les curseurs, et bien d'autres.
 
 &rarr; **Logs**<br/>
-L'application propose un système de logs référencant les erreurs rencontrées par le programme ainsi que les actions effectuées par l'utilisateur afin de comprendre qui ou qu'est-ce qui a causé l'erreur.<br/>
+L'application propose un système de logs référençant les erreurs rencontrées par le programme ainsi que les actions effectuées par l'utilisateur afin de comprendre qui ou qu'est-ce qui a causé l'erreur.<br/>
 Bien entendu, cette fonctionnalité peut être désactivé via les options correspondantes.
+
+&rarr; ...
 
 
 ___________________________________________________________________________
