@@ -40,7 +40,10 @@ ___________________________________________________________________________
 &rarr; **Système de customisation**<br/>
 Le système repose sur des sauvegardes dans des fichiers .txt locaux. La customisation permet de changer les couleurs, la police, la taille de cette dernière, les actions au survol, les curseurs, et bien d'autres.
 
-&rarr; ...
+&rarr; **Logs**<br/>
+L'application propose un système de logs référencant les erreurs rencontrées par le programme ainsi que les actions effectuées par l'utilisateur afin de comprendre qui ou qu'est-ce qui a causé l'erreur.<br/>
+Bien entendu, cette fonctionnalité peut être désactivé via les options correspondantes.
+
 
 ___________________________________________________________________________
 
