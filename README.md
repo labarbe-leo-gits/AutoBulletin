@@ -63,7 +63,7 @@ ___________________________________________________________________________
 
 Page GitHub du projet : ...<br/>
 Page MediaFire : ...<br/>
-Site Web personnel : labarbe-leo-drivewebhosting.on.drv.tw
+Site Web personnel : https://labarbe-leo-drivewebhosting.on.drv.tw
 ___________________________________________________________________________
 
 	Copyrights :
@@ -73,6 +73,6 @@ Conception dans un cadre scolaire.<br/>
 Lycée Claude Nicolas Ledoux.
 
 -> Pour tout contact :
-	Mail : labarbe.leo2308@gmail.com / labarbe.leo.scolaire@gmail.com
+	Mail : labarbe.leo2308@gmail.com / labarbe.leo.scolaire@gmail.com<br/>
 	En fonction de l'adresse mail utilisée, le temps de réponse peut varier
 
