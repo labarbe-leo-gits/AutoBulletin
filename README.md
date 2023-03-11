@@ -35,7 +35,7 @@ NOUVEAUX UI EN COURS DE DESIGN !!!
 
 ___________________________________________________________________________
 
-	Fonctionnalités :
+	<u>Fonctionnalités :</u>
 
 &rarr; **Système de customisation**<br/>
 Le système repose sur des sauvegardes dans des fichiers .txt locaux. La customisation permet de changer les couleurs, la police, la taille de cette dernière, les actions au survol, les curseurs, et bien d'autres.
