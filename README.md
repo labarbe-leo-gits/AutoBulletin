@@ -40,7 +40,7 @@ ___________________________________________________________________________
 &rarr; **Système de customisation**<br/>
 Le système repose sur des sauvegardes dans des fichiers .txt locaux. La customisation permet de changer les couleurs, la police, la taille de cette dernière, les actions au survol, les curseurs, et bien d'autres.
 
--> ...
+&rarr; ...
 
 ___________________________________________________________________________
 
@@ -53,7 +53,7 @@ Librairies : Tkinter, Random, TTK, Logging, Pronotepy, Traceback, Os<br/>
 Compileur .exe : Auto-py-to-exe<br/>
 Logiciel IU : PAGE
 
--> **Ouvrir les fichiers d'interface (.tcl) :**<br/>
+&rarr; **Ouvrir les fichiers d'interface (.tcl) :**<br/>
 	Pour ouvrir ces fichiers d'interface vous aurez besoin du logiciel
 	Open Source PAGE disponible sur sourceforge au lien suivant :<br/>
 		   https://sourceforge.net/projects/page/
@@ -72,7 +72,7 @@ Tout droits réservés - LABARBE Léo, Mr Imloul.<br/>
 Conception dans un cadre scolaire.<br/>
 Lycée Claude Nicolas Ledoux.
 
--> Pour tout contact :
+&rarr; Pour tout contact :
 	Mail : labarbe.leo2308@gmail.com / labarbe.leo.scolaire@gmail.com<br/>
 	En fonction de l'adresse mail utilisée, le temps de réponse peut varier
 
