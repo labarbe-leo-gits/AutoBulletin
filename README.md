@@ -37,7 +37,7 @@ ___________________________________________________________________________
 
 	Fonctionnalités :
 
--> Système de customisation
+-> **Système de customisation**<br/>
 Le système repose sur des sauvegardes dans des fichiers .txt locaux. La customisation permet de changer les couleurs, la police, la taille de cette dernière, les actions au survol, les curseurs, et bien d'autres.
 
 -> ...
@@ -53,7 +53,7 @@ Librairies : Tkinter, Random, TTK, Logging, Pronotepy, Traceback, Os<br/>
 Compileur .exe : Auto-py-to-exe<br/>
 Logiciel IU : PAGE
 
--> Ouvrir les fichiers d'interface (.tcl) :<br/>
+-> **Ouvrir les fichiers d'interface (.tcl) :**<br/>
 	Pour ouvrir ces fichiers d'interface vous aurez besoin du logiciel
 	Open Source PAGE disponible sur sourceforge au lien suivant :<br/>
 		   https://sourceforge.net/projects/page/
