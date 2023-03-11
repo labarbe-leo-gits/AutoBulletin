@@ -35,7 +35,7 @@ NOUVEAUX UI EN COURS DE DESIGN !!!
 
 ___________________________________________________________________________
 
-                            Fonctionnalités :
+	Fonctionnalités :
 
 -> Système de customisation
 Le système repose sur des sauvegardes dans des fichiers .txt locaux. La customisation permet de changer les couleurs, la police, la taille de cette dernière, les actions au survol, les curseurs, et bien d'autres.
@@ -44,7 +44,7 @@ Le système repose sur des sauvegardes dans des fichiers .txt locaux. La customi
 
 ___________________________________________________________________________
 
-                       Informations Complémentaires :
+	Informations Complémentaires :
 
 Langage de programmation : Python
 Version : 3.10
@@ -59,14 +59,14 @@ Logiciel IU : PAGE
 		   https://sourceforge.net/projects/page/
 ___________________________________________________________________________
 
-			  Liens Complémentaires :
+	Liens Complémentaires :
 
 Page GitHub du projet : ...
 Page MediaFire : ...
 Site Web personnel : labarbe-leo-drivewebhosting.on.drv.tw
 ___________________________________________________________________________
 
-                                Copyrights :
+	Copyrights :
 
 Tout droits réservés - LABARBE Léo, Mr Imloul.
 Conception dans un cadre scolaire.
