@@ -36,7 +36,6 @@ NOUVEAUX UI EN COURS DE DESIGN !!!
 ___________________________________________________________________________
 
                             Fonctionnalités :
-                           -------------------
 
 -> Système de customisation
 Le système repose sur des sauvegardes dans des fichiers .txt locaux. La customisation permet de changer les couleurs, la police, la taille de cette dernière, les actions au survol, les curseurs, et bien d'autres.
@@ -46,7 +45,6 @@ Le système repose sur des sauvegardes dans des fichiers .txt locaux. La customi
 ___________________________________________________________________________
 
                        Informations Complémentaires :
-                      --------------------------------
 
 Langage de programmation : Python
 Version : 3.10
@@ -62,7 +60,6 @@ Logiciel IU : PAGE
 ___________________________________________________________________________
 
 			  Liens Complémentaires :
-                         -------------------------
 
 Page GitHub du projet : ...
 Page MediaFire : ...
@@ -70,7 +67,6 @@ Site Web personnel : labarbe-leo-drivewebhosting.on.drv.tw
 ___________________________________________________________________________
 
                                 Copyrights :
-                               --------------
 
 Tout droits réservés - LABARBE Léo, Mr Imloul.
 Conception dans un cadre scolaire.
@@ -78,5 +74,5 @@ Lycée Claude Nicolas Ledoux.
 
 -> Pour tout contact :
 	Mail : labarbe.leo2308@gmail.com / labarbe.leo.scolaire@gmail.com
-	En fonction de l'adresse mail utilisée, le temps de réponse peut 		varier
+	En fonction de l'adresse mail utilisée, le temps de réponse peut varier
 
