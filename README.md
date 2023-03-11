@@ -49,27 +49,27 @@ ___________________________________________________________________________
 Langage de programmation : Python<br/>
 Version : 3.10<br/>
 IDE : VS Code<br/>
-Librairies : Tkinter, Random, TTK, Logging, Pronotepy, Traceback, Os
-Compileur .exe : Auto-py-to-exe
+Librairies : Tkinter, Random, TTK, Logging, Pronotepy, Traceback, Os<br/>
+Compileur .exe : Auto-py-to-exe<br/>
 Logiciel IU : PAGE
 
 -> Ouvrir les fichiers d'interface (.tcl) :
 	Pour ouvrir ces fichiers d'interface vous aurez besoin du logiciel
-	Open Source PAGE disponible sur sourceforge au lien suivant :
+	Open Source PAGE disponible sur sourceforge au lien suivant :<br/>
 		   https://sourceforge.net/projects/page/
 ___________________________________________________________________________
 
 	Liens Complémentaires :
 
-Page GitHub du projet : ...
-Page MediaFire : ...
+Page GitHub du projet : ...<br/>
+Page MediaFire : ...<br/>
 Site Web personnel : labarbe-leo-drivewebhosting.on.drv.tw
 ___________________________________________________________________________
 
 	Copyrights :
 
-Tout droits réservés - LABARBE Léo, Mr Imloul.
-Conception dans un cadre scolaire.
+Tout droits réservés - LABARBE Léo, Mr Imloul.<br/>
+Conception dans un cadre scolaire.<br/>
 Lycée Claude Nicolas Ledoux.
 
 -> Pour tout contact :
