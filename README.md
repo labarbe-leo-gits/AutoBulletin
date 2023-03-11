@@ -35,7 +35,7 @@ NOUVEAUX UI EN COURS DE DESIGN !!!
 
 ___________________________________________________________________________
 
-	<u>Fonctionnalités :</u>
+	Fonctionnalités :
 
 &rarr; **Système de customisation**<br/>
 Le système repose sur des sauvegardes dans des fichiers .txt locaux. La customisation permet de changer les couleurs, la police, la taille de cette dernière, les actions au survol, les curseurs, et bien d'autres.
@@ -75,4 +75,6 @@ Lycée Claude Nicolas Ledoux.
 &rarr; Pour tout contact :
 	Mail : labarbe.leo2308@gmail.com / labarbe.leo.scolaire@gmail.com<br/>
 	En fonction de l'adresse mail utilisée, le temps de réponse peut varier
+	
+<u>Test</u>
 
