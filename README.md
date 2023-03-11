@@ -53,7 +53,7 @@ Librairies : Tkinter, Random, TTK, Logging, Pronotepy, Traceback, Os<br/>
 Compileur .exe : Auto-py-to-exe<br/>
 Logiciel IU : PAGE
 
--> Ouvrir les fichiers d'interface (.tcl) :
+-> Ouvrir les fichiers d'interface (.tcl) :<br/>
 	Pour ouvrir ces fichiers d'interface vous aurez besoin du logiciel
 	Open Source PAGE disponible sur sourceforge au lien suivant :<br/>
 		   https://sourceforge.net/projects/page/
