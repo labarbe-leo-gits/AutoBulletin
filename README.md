@@ -44,5 +44,5 @@ Lycée Claude Nicolas Ledoux.
 
 &rarr; Pour tout contact :
 	Mail : labarbe.leo2308@gmail.com / labarbe.leo.scolaire@gmail.com<br/>
-	En fonction de l'adresse mail utilisée, le temps de réponse peut varier
+	En fonction de l'adresse mail utilisée, le temps de réponse peut varier.
 	
