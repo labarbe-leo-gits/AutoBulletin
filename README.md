@@ -49,13 +49,9 @@ ___________________________________________________________________________
 Langage de programmation : Python
 
 Version : 3.10
-
 IDE : VS Code
-
 Librairies : Tkinter, Random, TTK, Logging, Pronotepy, Traceback, Os
-
 Compileur .exe : Auto-py-to-exe
-
 Logiciel IU : PAGE
 
 -> Ouvrir les fichiers d'interface (.tcl) :
@@ -67,9 +63,7 @@ ___________________________________________________________________________
 	Liens Complémentaires :
 
 Page GitHub du projet : ...
-
 Page MediaFire : ...
-
 Site Web personnel : labarbe-leo-drivewebhosting.on.drv.tw
 ___________________________________________________________________________
 
