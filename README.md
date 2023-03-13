@@ -27,6 +27,11 @@ Logiciel IU : PAGE
 	Pour ouvrir ces fichiers d'interface vous aurez besoin du logiciel
 	Open Source PAGE disponible sur sourceforge au lien suivant :<br/>
 		   https://sourceforge.net/projects/page/
+
+&rarr; **Installer les librairies nécessaires :**<br/>
+	Certaines librairies utilisées ne sont pas intégrées à python directement. C'est pourquoi
+	vous aurez besoin de les installer via les commandes ```pip``` suivantes :<br/>
+	&rarr; ```pip install pronotepy```<br/>
 ___________________________________________________________________________
 
 	Liens Complémentaires :
