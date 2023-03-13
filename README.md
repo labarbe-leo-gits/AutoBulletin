@@ -13,7 +13,7 @@ Bien entendu, cette fonctionnalité peut être désactivé via les options corre
 ## :question: Informations Complémentaires
 
 * Langage de programmation : [Python](https://www.python.org/)<br/>
-* Version : 3.10<br/>
+* Version : 3.10.8<br/>
 * IDE : [VS Code](https://code.visualstudio.com/)<br/>
 * Librairies : Tkinter, TTK (Tkinter), Random, Logging, [Pronotepy](https://pypi.org/project/pronotepy/), Os, Pickle<br/>
 * Compileur .exe : [auto-py-to-exe](https://pypi.org/project/auto-py-to-exe/)<br/>
