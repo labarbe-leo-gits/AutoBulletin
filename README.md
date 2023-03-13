@@ -19,7 +19,7 @@ ___________________________________________________________________________
 Langage de programmation : Python<br/>
 Version : 3.10<br/>
 IDE : VS Code<br/>
-Librairies : Tkinter, Random, TTK, Logging, Pronotepy, Traceback, Os<br/>
+Librairies : Tkinter, TTK, Random, Logging, Pronotepy, Os, Pickle<br/>
 Compileur .exe : Auto-py-to-exe<br/>
 Logiciel IU : PAGE
 
