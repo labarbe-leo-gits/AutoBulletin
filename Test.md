@@ -1,37 +1,43 @@
-# Foobar
+# 🤖 AutoBulletin
 
-Foobar is a Python library for dealing with word pluralization.
+AutoBulletin est un projet mené dans un cadre scolaire avec un professeur. Il permet à tout enseignant utilisant le logiciel de générer et d'inscrire des appréciations sur pronote. Bien entendu, l'enseignant doit tout de même cliquer sur des paramètres (5 au total) afin de classifier l'appréciation. Le logiciel possèe également d'autre fonctionnalités détaillées ci-dessous.
 
-## Installation
+## ⚙ Fonctionnalités
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+&rarr; **Customisation :**<br/>
+Le logiciel permet une customisation de tout les éléments présents. En passant des couleurs aux effets de survols, tout est modifiable.<br/><br/>
+&rarr; **Logs :**<br/>
+L'application propose un système de logs référençant les erreurs rencontrées par le programme ainsi que les actions effectuées par l'utilisateur afin de comprendre qui ou qu'est-ce qui a causé l'erreur.
+Bien entendu, cette fonctionnalité peut être désactivé via les options correspondantes.
 
+## :question: Informations Complémentaires
+
+* Langage de programmation : [Python](https://www.python.org/)<br/>
+* Version : 3.10<br/>
+* IDE : [VS Code](https://code.visualstudio.com/)<br/>
+* Librairies : Tkinter, TTK (Tkinter), Random, Logging, Pronotepy, Os, Pickle<br/>
+* Compileur .exe : [auto-py-to-exe](https://pypi.org/project/auto-py-to-exe/)<br/>
+* Logiciel IU : [PAGE](https://sourceforge.net/projects/page/)
+
+&rarr; **Ouvrir les fichiers d'interface (.tcl) :**<br/>Pour ouvrir ces fichiers d'interface vous aurez besoin du logiciel Open Source PAGE disponible sur sourceforge.<br/>
+
+&rarr; **Installer les librairies nécessaires :**<br/>Certaines librairies utilisées ne sont pas intégrées à python directement. C'est pourquoi vous aurez besoin de les installer via les commandes [pip](https://pip.pypa.io/en/stable/) suivantes dans votre terminal de commande.<br/>
 ```bash
-pip install foobar
+pip install pronotepy
 ```
 
-## Usage
+## :link: Liens Complémentaires
+Page GitHub du projet : https://github.com/labarbe-leo-gits/AutoBulletin <br/>
+Page MediaFire : https://www.mediafire.com/folder/8y3wuu514kdyh/Auto_Complétion_Bulletins <br/>
+Site Web personnel : https://labarbe-leo-drivewebhosting.on.drv.tw
 
-```python
-import foobar
+## :incoming_envelope: Contact & Copyrights
+Copyright LABARBE Léo, Mr Imloul ©.
+<br/>Lycée Claude Nicolas Ledoux.
 
-# returns 'words'
-foobar.pluralize('word')
+&rarr; Pour tout contact : <br/>Mail : labarbe.leo2308@gmail.com / labarbe.leo.scolaire@gmail.com
+En fonction de l'adresse mail utilisée, le temps de réponse peut varier.
 
-# returns 'geese'
-foobar.pluralize('goose')
+## :memo:Licence
 
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+Le logiciel est sous licence [MIT](https://github.com/labarbe-leo-gits/AutoBulletin/blob/main/LICENSE.md) 💖
