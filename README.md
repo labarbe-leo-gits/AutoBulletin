@@ -30,8 +30,8 @@ Logiciel IU : PAGE
 
 &rarr; **Installer les librairies nécessaires :**<br/>
 	Certaines librairies utilisées ne sont pas intégrées à python directement. C'est pourquoi
-	vous aurez besoin de les installer via les commandes pip suivantes dans votre terminal de commande :<br/>
-	&rarr;
+	vous aurez besoin de les installer via les commandes pip suivantes dans votre terminal de commande :<br/><br/>
+	&rarr; **pronotepy**
 	
 	pip install pronotepy
 	
