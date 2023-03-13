@@ -34,10 +34,6 @@ Logiciel IU : PAGE
 	&rarr; **pronotepy**
 	
 	pip install pronotepy
-	
-<br/>
-
-
 ___________________________________________________________________________
 
 	Liens Complémentaires :
