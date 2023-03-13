@@ -36,7 +36,7 @@ Copyright LABARBE Léo, Mr Imloul ©.
 <br/>Lycée Claude Nicolas Ledoux.
 
 &rarr; Pour tout contact : <br/>Mail : labarbe.leo2308@gmail.com / labarbe.leo.scolaire@gmail.com
-En fonction de l'adresse mail utilisée, le temps de réponse peut varier.
+<br/>En fonction de l'adresse mail utilisée, le temps de réponse peut varier.
 
 ## :memo:Licence
 
