@@ -2,6 +2,19 @@
 
 AutoBulletin est un projet mené dans un cadre scolaire avec un professeur. Il permet à tout enseignant utilisant le logiciel de générer et d'inscrire des appréciations sur pronote. Bien entendu, l'enseignant doit tout de même cliquer sur des paramètres (5 au total) afin de classifier l'appréciation. Le logiciel possèe également d'autre fonctionnalités détaillées ci-dessous.
 
+## :books: Table des matières
+
+* [Fonctionnalités](https://github.com/labarbe-leo-gits/AutoBulletin/#-fonctionnalit%C3%A9s)
+  * Customisation
+  * Logs
+* [Informations Complémentaires](https://github.com/labarbe-leo-gits/AutoBulletin#question-informations-compl%C3%A9mentaires)
+  * Informations techniques
+  * Fichiers d'interface .tcl
+  * Installation de librairies
+* [Liens Complémentaires](https://github.com/labarbe-leo-gits/AutoBulletin#link-liens-compl%C3%A9mentaires)
+* [Contact & Copyrights](https://github.com/labarbe-leo-gits/AutoBulletin#incoming_envelope-contact--copyrights)
+* [Licence](https://github.com/labarbe-leo-gits/AutoBulletin#memolicence)
+
 ## ⚙ Fonctionnalités
 
 &rarr; **Customisation :**<br/>
