@@ -4,16 +4,16 @@ AutoBulletin est un projet mené dans un cadre scolaire avec un professeur. Il p
 
 ## :books: Table des matières
 
-* [Fonctionnalités](https://github.com/labarbe-leo-gits/AutoBulletin/#-fonctionnalit%C3%A9s)
+* [Fonctionnalités](#-fonctionnalit%C3%A9s)
   * Customisation
   * Logs
-* [Informations Complémentaires](https://github.com/labarbe-leo-gits/AutoBulletin#question-informations-compl%C3%A9mentaires)
+* [Informations Complémentaires](#question-informations-compl%C3%A9mentaires)
   * Informations techniques
   * Fichiers d'interface .tcl
   * Installation de librairies
-* [Liens Complémentaires](https://github.com/labarbe-leo-gits/AutoBulletin#link-liens-compl%C3%A9mentaires)
-* [Contact & Copyrights](https://github.com/labarbe-leo-gits/AutoBulletin#incoming_envelope-contact--copyrights)
-* [Licence](https://github.com/labarbe-leo-gits/AutoBulletin#memolicence)
+* [Liens Complémentaires](#link-liens-compl%C3%A9mentaires)
+* [Contact & Copyrights](#incoming_envelope-contact--copyrights)
+* [Licence](#memolicence)
 
 ## ⚙ Fonctionnalités
 
