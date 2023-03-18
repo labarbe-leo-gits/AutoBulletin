@@ -39,7 +39,7 @@ Bien entendu, cette fonctionnalité peut être désactivé via les options corre
 pip install pronotepy
 ```
 ```bash
-pip install pynput
+pip install keyboard
 ```
 
 ## :link: Liens Complémentaires
