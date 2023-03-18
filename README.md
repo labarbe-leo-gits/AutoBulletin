@@ -38,6 +38,9 @@ Bien entendu, cette fonctionnalité peut être désactivé via les options corre
 ```bash
 pip install pronotepy
 ```
+```bash
+pip install pynput
+```
 
 ## :link: Liens Complémentaires
 Page GitHub du projet : https://github.com/labarbe-leo-gits/AutoBulletin <br/>
