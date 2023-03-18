@@ -7,12 +7,12 @@ Oui. Vous êtes libre de modifier l'application comme vous le souhaitez tout en 
 
 ## ❓ Que faire en cas de bug / problème ?
 
-En cas de problème avec l'application et les ressources fournies, nous vous encourageons à nou envoyer par mail les éléments suivants :
+En cas de problème avec l'application et les ressources fournies, nous vous encourageons à nous envoyer par mail les éléments suivants :
 
 * Logs utilisateur
 * Logs d'erreurs
 
-ainsi qu'une description du prolème (si possible avec des captures d'écran).
+ainsi qu'une description du problème (si possible avec des captures d'écran).
 Les éléments fournis seront utilisés uniquement afin de comprendre comment le bug est causé et comment y remédier. A la fin de l'analyse, les éléments seront supprimés.
 
 ## ❓ Où trouver les logs de l'application ?
