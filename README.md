@@ -28,7 +28,7 @@ Bien entendu, cette fonctionnalité peut être désactivé via les options corre
 * Langage de programmation : [Python](https://www.python.org/)<br/>
 * Version : [3.10.8](https://www.python.org/downloads/release/python-3108/)<br/>
 * IDE : [VS Code](https://code.visualstudio.com/)<br/>
-* Librairies : tkinter, TTK (tkinter), random, logging, [pronotepy](https://pypi.org/project/pronotepy/), os, pickle, [keyboard](https://pypi.org/project/keyboard/)<br/>
+* Librairies : tkinter, TTK (tkinter), random, logging, [pronotepy](https://pypi.org/project/pronotepy/), os, pickle, [keyboard](https://pypi.org/project/keyboard/), msvcrt<br/>
 * Compileur .exe : [auto-py-to-exe](https://pypi.org/project/auto-py-to-exe/)<br/>
 * Logiciel IU : [PAGE](https://sourceforge.net/projects/page/)
 
