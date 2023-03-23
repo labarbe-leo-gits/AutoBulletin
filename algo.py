@@ -46,7 +46,7 @@ appreciations_mauvais_results_but_few_nohomework = {}
 appreciations_mauvais_results_but_homework = {}
 
 # APRECIATIONS SERIOUS
-appreciations_serious_but_serious = {}
+appreciations_serious_but_talk = {}
 appreciations_serious_but_participe = {}
 appreciations_serious_but_good_grades = {}
 appreciations_serious_but_perfect_grades = {}
