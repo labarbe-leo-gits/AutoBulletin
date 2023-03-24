@@ -34,16 +34,31 @@ print("Les réponses (hors exceptions) sont à présenter sous le format 'oui' e
 # classnumber et school info ne sont pas encore implémentés, ce sont des placeholders.
 
 # SEULEMENT LE TYPE DE BAVARDAGES CHANGE !!!!!!!!
-# APRECIATIONS BAVARDAGES
+# APRECIATIONS RESULTATS NON ACQUIS
+appreciations_mauvais_results_but_talk = {}
 appreciations_mauvais_results_but_serious = {}
 appreciations_mauvais_results_but_participe = {}
 appreciations_mauvais_results_but_good_grades = {}
 appreciations_mauvais_results_but_perfect_grades = {}
-appreciations_mauvais_results_but_bad_grades = {}
 appreciations_mauvais_results_but_on_going_grades = {}
 appreciations_mauvais_results_but_nohomework = {}
 appreciations_mauvais_results_but_few_nohomework = {}
 appreciations_mauvais_results_but_homework = {}
+
+# APPRECIATIONS EN UNE SEULE LIGNE : IF STATEMENT VA CHERCHER DANS L'INEX DU DICO
+
+app_results = {"Des résultats qui ne sont malheureusement pas à la hauteur"}
+
+# RESULTATS MOYENS
+appreciations_on_going_but_serious = {}
+appreciations_on_going_but_talk = {}
+appreciations_on_going_but_participe = {}
+appreciations_on_going_but_good_grades = {}
+appreciations_on_going_but_perfect_grades = {}
+appreciations_on_going_but_bad_grades = {}
+appreciations_on_going_but_nohomework = {}
+appreciations_on_going_but_few_nohomework = {}
+appreciations_on_going_but_homework = {}
 
 # APRECIATIONS SERIOUS
 appreciations_serious_but_talk = {}
