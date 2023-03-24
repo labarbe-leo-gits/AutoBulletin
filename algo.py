@@ -47,7 +47,11 @@ appreciations_mauvais_results_but_homework = {}
 
 # APPRECIATIONS EN UNE SEULE LIGNE : IF STATEMENT VA CHERCHER DANS L'INEX DU DICO
 
-app_results = {"Des résultats qui ne sont malheureusement pas à la hauteur"}
+app_results = {f"Des résultats qui ne sont malheureusement pas à la hauteur. Toutefois l'attitude de {eleve} test"}
+app_talk = {}
+app_participe = {}
+app_homework = {}
+app_serious = {}
 
 # RESULTATS MOYENS
 appreciations_on_going_but_serious = {}
