@@ -29,8 +29,12 @@ Bien entendu, cette fonctionnalité peut être désactivé via les options corre
 * Version : [3.10.8](https://www.python.org/downloads/release/python-3108/)<br/>
 * IDE : [VS Code](https://code.visualstudio.com/)<br/>
 * Librairies : tkinter, TTK (tkinter), random, logging, [pronotepy](https://pypi.org/project/pronotepy/), pickle, [keyboard](https://pypi.org/project/keyboard/), msvcrt, [pyautogui](https://pypi.org/project/PyAutoGUI/)<br/>
-* Compileur .exe : [auto-py-to-exe](https://pypi.org/project/auto-py-to-exe/)<br/>
+* Compileur .exe : ✖<br/>
 * Logiciel IU : [PAGE](https://sourceforge.net/projects/page/)
+
+<!--- 
+([auto-py-to-exe](https://pypi.org/project/auto-py-to-exe/)) // Compileur - non utile pour ce projet
+-->
 
 &rarr; **Ouvrir les fichiers d'interface (.tcl) :**<br/>Pour ouvrir ces fichiers d'interface vous aurez besoin du logiciel Open Source PAGE disponible sur sourceforge.<br/>
 
