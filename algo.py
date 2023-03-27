@@ -18,7 +18,7 @@ global G
 G = 'Garçon'
 PGT1 = {"Noham":G,"Laetitia":F, "Mohamed-Badache":G, "Imene":F, "Nihad":F, "Kenza":F, "Mouna":F,
 "Mohamed-Bouhania":G, "Soraya":F, "Medina":F, "Okan":G, "Hamza":G, "Evane":G, "Kim":G,
-"Rami":G, "Chaima":F, "Leo":G, "Xavier":G, "Nourhane":F, "Imane-Teriza":F,
+"Rami":G, "Chaima":F, "Léo":G, "Xavier":G, "Nourhane":F, "Imane-Teriza":F,
 "Seraphine":F, "Laura":F, "Wacil":G, "Sihame":F}
 PGT2 = {}
 
@@ -28,53 +28,48 @@ PGT2 = {}
 # Menu
 print("Auto Complétion De Bulletin - Beta B-0-1")
 print("Les réponses (hors exceptions) sont à présenter sous le format 'oui' et 'non' ; Pour les efforts, 'efforts'")
-# classnumber = input("Classe : ")
-# schoolinfo = input("Lycée : ")
 
-# classnumber et school info ne sont pas encore implémentés, ce sont des placeholders.
+# Pronoms/grammaire/etc... en fonction du genre
+masc = ["il"]
+fem = ["elle"]
 
-# SEULEMENT LE TYPE DE BAVARDAGES CHANGE !!!!!!!!
-# APRECIATIONS RESULTATS NON ACQUIS
-appreciations_mauvais_results_but_talk = {}
-appreciations_mauvais_results_but_serious = {}
-appreciations_mauvais_results_but_participe = {}
-appreciations_mauvais_results_but_good_grades = {}
-appreciations_mauvais_results_but_perfect_grades = {}
-appreciations_mauvais_results_but_on_going_grades = {}
-appreciations_mauvais_results_but_nohomework = {}
-appreciations_mauvais_results_but_few_nohomework = {}
-appreciations_mauvais_results_but_homework = {}
+# Détecter le genre de l'individu via le dictionnaire PGT1
+name = input("Nom de l'élève : ")
+genre = PGT1.get(name)
+print(f"Genre associé à {name} : {genre}")
 
-# APPRECIATIONS EN UNE SEULE LIGNE : IF STATEMENT VA CHERCHER DANS L'INEX DU DICO
+# Afficher les variables suivant le genre
+if genre == F :
+    print(f"Pronoms : {fem}")
+elif genre == G :
+    print(f"Pronoms : {masc}")
+else :
+    print("Une erreur est survenue")
 
-app_results = {f"Des résultats qui ne sont malheureusement pas à la hauteur. Toutefois l'attitude de {eleve} test"}
+# Définition globale des variables classifianty l'appréciation
+# global talk
+# global serious
+# global results
+# global participation
+# global homework
+
+# Définition de ces variables
+talk = input("Bavardages (modérés, etc...) : ")
+serious = input("Sérieux (y/n) : ")
+results = input("Résultats (satisfaisants, etc...) : ")
+participation = input("Participation (discrète, etc...) : ")
+homework = input("Devoirs faits/rendus (y/n/sometimes) : ")
+
+# APPRECIATIONS EN UNE SEULE LIGNE : IF STATEMENT VA CHERCHER DANS L'INDEX DU DICO
+# Dictionnaires d'appréciations
+#app_results = {f"Des résultats qui ne sont malheureusement pas à la hauteur. Toutefois l'attitude de {eleve} est {attitude}"}
 app_talk = {}
 app_participe = {}
 app_homework = {}
-app_serious = {}
+app_serious = [f"{name} ne fait preuve d'aucun sérieux dans les travaux entrepris en classe. Il faut se resaisir !"]
 
-# RESULTATS MOYENS
-appreciations_on_going_but_serious = {}
-appreciations_on_going_but_talk = {}
-appreciations_on_going_but_participe = {}
-appreciations_on_going_but_good_grades = {}
-appreciations_on_going_but_perfect_grades = {}
-appreciations_on_going_but_bad_grades = {}
-appreciations_on_going_but_nohomework = {}
-appreciations_on_going_but_few_nohomework = {}
-appreciations_on_going_but_homework = {}
-
-# APRECIATIONS SERIOUS
-appreciations_serious_but_talk = {}
-appreciations_serious_but_participe = {}
-appreciations_serious_but_good_grades = {}
-appreciations_serious_but_perfect_grades = {}
-appreciations_serious_but_bad_grades = {}
-appreciations_serious_but_on_going_grades = {}
-appreciations_serious_but_nohomework = {}
-appreciations_serious_but_few_nohomework = {}
-appreciations_serious_but_homework = {}
-
+if serious == 'n' :
+    print(app_serious[0])
 
 classcount = int(input("Nombre d'élèves dans la classe : "))
 
