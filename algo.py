@@ -69,7 +69,10 @@ app_homework = {}
 app_serious = [f"{name} ne fait preuve d'aucun sérieux dans les travaux entrepris en classe. Il faut se resaisir !"]
 
 if serious == 'n' :
-    print(app_serious[0])
+    if results == 'ah':
+        print('bruh')
+    elif results == 'NEIN' :
+        print(app_serious[0])
 
 classcount = int(input("Nombre d'élèves dans la classe : "))
 
