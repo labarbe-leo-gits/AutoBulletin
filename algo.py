@@ -56,7 +56,7 @@ else :
 # Définition de ces variables
 talk = input("Bavardages (modérés, etc...) : ")
 serious = input("Sérieux (y/n) : ")
-results = input("Résultats (satisfaisants, etc...) : ")
+results = input("Résultats (TS, S, CA, NA) : ")
 participation = input("Participation (discrète, etc...) : ")
 homework = input("Devoirs faits/rendus (y/n/sometimes) : ")
 
@@ -69,10 +69,15 @@ app_homework = {}
 app_serious = [f"{name} ne fait preuve d'aucun sérieux dans les travaux entrepris en classe. Il faut se resaisir !"]
 
 if serious == 'n' :
-    if results == 'ah':
-        print('bruh')
-    elif results == 'NEIN' :
-        print(app_serious[0])
+    if results == 'TS':
+        print('Très Satisfaisant')
+    elif results == 'S' :
+        print("Satisfaisant")
+        # print(app_serious[0])
+    elif results == 'CA':
+        print("En Cours D'Acquisition")
+    elif results == 'NA' :
+        print("Non Acquis")
 
 classcount = int(input("Nombre d'élèves dans la classe : "))
 
