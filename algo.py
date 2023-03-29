@@ -1,4 +1,6 @@
-# Script non-optimisé - Projet en cours de développement
+# Script non-optimisé
+# Version 'Console' 1.0
+# Script commenté
 
 # Import de librairies
 from random import *
@@ -78,6 +80,13 @@ if serious == 'n' :
         print("En Cours D'Acquisition")
     elif results == 'NA' :
         print("Non Acquis")
+
+elif serious == 'y' :
+    if results :
+        if talk :
+            if participation :
+                if homework :
+                    pass
 
 classcount = int(input("Nombre d'élèves dans la classe : "))
 
