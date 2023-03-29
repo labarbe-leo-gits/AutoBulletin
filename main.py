@@ -1,7 +1,7 @@
 #######################
 # Le programme fourni #               #######################
 # ne dispose d'aucune #               # Libre à vous de les #
-#       fontion       #               #     implémenter     #
+#      fonction       #               #     implémenter     #
 #   d'optimisation    #               #######################
 #######################
 
