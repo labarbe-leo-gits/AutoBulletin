@@ -2,16 +2,14 @@
 # Version 'Console' 1.0
 # Script commenté
 
+# Script par LABARBE Léo,
+# LPC Nicolas Ledoux
+
+# ---------------------
+
 # Import de librairies
 from random import *
 
-# Setup classification des genres par prénoms
-#    -> Utilisation de dictionnaires des prénoms associés au genre de l'élève.
-
-# Claude Nicolas Ledoux
-# P = Première / G = Garçon - F = Fille
-
-print("Seul la 1GT1 Claude Nicolas Ledoux est implémentée pour les tests. Rentrez le prénom de chanque élève !")
 print("La génération customisée d'appréciation est en cours de développement. Pour le moment, tout relève du random pour des tests sans classifications.")
 
 global F
@@ -32,8 +30,8 @@ print("Auto Complétion De Bulletin - Beta B-0-1")
 print("Les réponses (hors exceptions) sont à présenter sous le format 'oui' et 'non' ; Pour les efforts, 'efforts'")
 
 # Pronoms/grammaire/etc... en fonction du genre
-masc = ["il"]
-fem = ["elle"]
+masc = ["il", "sérieux"]
+fem = ["elle", "sérieuse"]
 
 # Détecter le genre de l'individu via le dictionnaire PGT1
 name = input("Nom de l'élève : ")
@@ -56,11 +54,14 @@ else :
 # global homework
 
 # Définition de ces variables
-talk = input("Bavardages (modérés, etc...) : ")
+talk = input("Bavardages (BCP, M, P, ABS) : ")
 serious = input("Sérieux (y/n) : ")
 results = input("Résultats (TS, S, CA, NA) : ")
-participation = input("Participation (discrète, etc...) : ")
-homework = input("Devoirs faits/rendus (y/n/sometimes) : ")
+participation = input("Participation (P, D, ABS) : ")
+homework = input("Devoirs faits/rendus (y/n/sm) : ")
+
+# Définition du message d'erreur 'type'
+error = f"l'Entrée renseignée n'est pas valide. Merci de réessayer ultérieurement."
 
 # APPRECIATIONS EN UNE SEULE LIGNE : IF STATEMENT VA CHERCHER DANS L'INDEX DU DICO
 # Dictionnaires d'appréciations
@@ -70,23 +71,69 @@ app_participe = {}
 app_homework = {}
 app_serious = [f"{name} ne fait preuve d'aucun sérieux dans les travaux entrepris en classe. Il faut se resaisir !"]
 
-if serious == 'n' :
-    if results == 'TS':
-        print('Très Satisfaisant')
-    elif results == 'S' :
-        print("Satisfaisant")
-        # print(app_serious[0])
-    elif results == 'CA':
-        print("En Cours D'Acquisition")
-    elif results == 'NA' :
-        print("Non Acquis")
+# Mise en global de variable 'int'. Ces integer définissent le niveau accordé par chaque critère. Par défaut 0.
+global serious_lvl, results_lvl, talk_lvl, participation_lvl, homework_lvl
+serious_lvl = 0
+results_lvl = 0
+talk_lvl = 0
+participation_lvl = 0
+homework_lvl = 0
 
-elif serious == 'y' :
-    if results :
+# print(app_serious[0])
+# Fonction de classification d'appréciations
+def classing():
+    global serious_lvl, results_lvl, talk_lvl, participation_lvl, homework_lvl
+    try :
+        if serious :
+            if serious == 'y':
+                serious_lvl = 1
+            elif serious == 'n':
+                serious_lvl = 2     
+                
+        if results :
+            if results == 'TS':
+                results_lvl = 1
+            elif results == 'S':
+                results_lvl = 2
+            elif results == 'CA':
+                results_lvl = 3
+            elif results == 'NA':
+                results_lvl = 4   
+                
         if talk :
-            if participation :
-                if homework :
-                    pass
+            if talk == 'BCP':
+                talk_lvl = 4
+            elif talk == 'M':
+                talk_lvl = 3
+            elif talk == 'P':
+                talk_lvl = 2
+            elif talk == 'ABS':
+                talk_lvl = 1           
+                
+        if participation :
+            if participation == 'P':
+                participation_lvl = 1
+            elif participation == 'D':
+                participation_lvl = 2
+            elif participation == 'ABS':
+                participation_lvl = 3
+                      
+        if homework :
+            if homework == 'y':
+                homework_lvl = 1
+            elif homework == 'n':
+                homework_lvl = 3
+            elif homework == 'sm':
+                homework_lvl = 2
+
+        if serious and serious_lvl == 1 :
+            print("PARFAIT")
+
+    except Exception as e :
+        print(e)    
+            
+
+classing()
 
 classcount = int(input("Nombre d'élèves dans la classe : "))
 
