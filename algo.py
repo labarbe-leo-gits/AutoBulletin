@@ -127,7 +127,8 @@ def classing():
                 homework_lvl = 2
 
         if serious and serious_lvl == 1 :
-            print("PARFAIT")
+            print("eleves serieux")
+
 
     except Exception as e :
         print(e)    
