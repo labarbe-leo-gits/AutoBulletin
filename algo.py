@@ -71,6 +71,8 @@ app_participe = {}
 app_homework = {}
 app_serious = [f"{name} ne fait preuve d'aucun sérieux dans les travaux entrepris en classe. Il faut se resaisir !"]
 
+appreciations = []
+
 # Mise en global de variable 'int'. Ces integer définissent le niveau accordé par chaque critère. Par défaut 0.
 global serious_lvl, results_lvl, talk_lvl, participation_lvl, homework_lvl
 serious_lvl = 0
