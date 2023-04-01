@@ -28,8 +28,9 @@ Bien entendu, cette fonctionnalité peut être désactivé via les options corre
 
 ## 📁 Versions
 
-&rarr; **Console :**<br/>
-&rarr; **Interface :**<br/>
+&rarr; **Console :** Non disponible pour le moment, aucune description disponible.<br/>
+<br/>
+&rarr; **Interface : Non disponible pour le moment, aucune description disponible.**<br/>
 
 ## :question: Informations Complémentaires
 
