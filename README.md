@@ -7,6 +7,9 @@ AutoBulletin est un projet mené dans un cadre scolaire avec un professeur. Il p
 * [Fonctionnalités](#-fonctionnalit%C3%A9s)
   * Customisation
   * Logs
+* [Versions](#-versions)
+  * Console
+  * Interface
 * [Informations Complémentaires](#question-informations-compl%C3%A9mentaires)
   * Informations techniques
   * Fichiers d'interface .tcl
@@ -22,6 +25,11 @@ Le logiciel permet une customisation de tout les éléments présents. En passan
 &rarr; **Logs :**<br/>
 L'application propose un système de logs référençant les erreurs rencontrées par le programme ainsi que les actions effectuées par l'utilisateur afin de comprendre qui ou qu'est-ce qui a causé l'erreur.
 Bien entendu, cette fonctionnalité peut être désactivé via les options correspondantes.
+
+## 📁 Versions
+
+&rarr; **Console :**<br/>
+&rarr; **Interface :**<br/>
 
 ## :question: Informations Complémentaires
 
