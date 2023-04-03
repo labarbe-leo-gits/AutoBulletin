@@ -1,6 +1,6 @@
 # 🤖 AutoBulletin
 
-AutoBulletin est un projet mené dans un cadre scolaire avec un professeur. Il permet à tout enseignant utilisant le logiciel de générer et d'inscrire des appréciations sur pronote. Bien entendu, l'enseignant doit tout de même cliquer sur des paramètres (5 au total) afin de classifier l'appréciation. Le logiciel possèe également d'autre fonctionnalités détaillées ci-dessous.
+AutoBulletin est un projet mené dans un cadre scolaire avec un professeur. Il permet à tout enseignant utilisant le logiciel de générer et d'inscrire des appréciations sur pronote. 5 paramètres sont disponibles pour classificer l'appréciation afin de générer l'appréciation la plus adapté ... Libre à vous, si le coeur vous en dit, d'ajouter vos propres paramètres ! Le logiciel possède également d'autre fonctionnalités détaillées ci-dessous.
 
 ## :books: Table des matières
 
