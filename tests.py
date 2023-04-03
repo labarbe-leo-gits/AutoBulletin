@@ -30,8 +30,8 @@ print("Auto Complétion De Bulletin - Beta B-0-1")
 print("Les réponses (hors exceptions) sont à présenter sous le format 'oui' et 'non' ; Pour les efforts, 'efforts'")
 
 # Pronoms/grammaire/etc... en fonction du genre
-masc = ["il", "sérieux", "un"]
-fem = ["elle", "sérieuse", "une"]
+masc = ["il", "sérieux", "un", "lui"]
+fem = ["elle", "sérieuse", "une", "une"]
 
 # Détecter le genre de l'individu via le dictionnaire PGT1
 name = input("Nom de l'élève : ")
@@ -74,9 +74,16 @@ error = f"l'Entrée renseignée n'est pas valide. Merci de réessayer ultérieur
 # Liste d'appréciations
 # Déclaration globale de la variable
 global appreciations
-appreciations = [f"{name} est {prono[2]} élève {prono[1]} fournissant des résultats exemplaires comme son comportement en classe. Continue ainsi !",
-                 f"{name}","",""]
-print(appreciations[0])
+appreciations = [f"{name} est {prono[2]} élève {prono[1]} fournissant des résultats exemplaires tout comme son comportement en classe. Continue ainsi !",
+                 f"{name} fait preuve de sérieux pendant les cours en s'appliquant avec soin. Je t'encourage à poursuivre ainsi !",
+                 f"Un trimestre correcte pour {name} avec de bons résultats dans l'ensemble et un travail personnel sérieux. Bravo !",
+                 f"Un trimestre peu qualitatif pour {name}. {prono[0]} a besoin de prendre plus confiance en {prono[3]} pour participer à l'oral.",
+                 f"Un bon trimestre dans l'ensemble pour {name}. Cependant, il ne faut pas hésiter à prendre la parole en classe ou à poser des questions !",
+                 f"Les notions sont en cours d'aquisition pour {name}. Afin de mieux réussir, il faut améliorer son travail personnel.",
+                 f"Un trimestre noir pour {name}. Les résultats ne sont pas au rendez-vous creusant les lacunes ainsi qu'un travail personnel trop rare. Il faut vous ressaisir !",
+                 f""]
+appreciations_fin_annee = []
+print(appreciations[6])
 
 # Mise en global de variable 'int'. Ces integer définissent le niveau accordé par chaque critère. Par défaut 0.
 
