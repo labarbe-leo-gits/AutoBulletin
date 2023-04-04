@@ -37,7 +37,7 @@ Bien entendu, cette fonctionnalité peut être désactivé via les options corre
 * Langage de programmation : [Python](https://www.python.org/)<br/>
 * Version : [3.10.8](https://www.python.org/downloads/release/python-3108/)<br/>
 * IDE : [VS Code](https://code.visualstudio.com/)<br/>
-* Librairies : tkinter, TTK (tkinter), random, logging, [pronotepy](https://pypi.org/project/pronotepy/), pickle, [keyboard](https://pypi.org/project/keyboard/), msvcrt, [pyautogui](https://pypi.org/project/PyAutoGUI/)<br/>
+* Librairies : tkinter, TTK (tkinter), random, logging, [pronotepy](https://pypi.org/project/pronotepy/), pickle, [keyboard](https://pypi.org/project/keyboard/), msvcrt, [pyautogui](https://pypi.org/project/PyAutoGUI/), [Pillow](https://pypi.org/project/Pillow/) (PIL)<br/>
 * Compileur .exe : ✖<br/>
 * Logiciel IU : [PAGE](https://sourceforge.net/projects/page/)
 
@@ -53,6 +53,9 @@ pip install pronotepy
 ```
 ```bash
 pip install keyboard
+```
+```bash
+pip install Pillow
 ```
 ```bash
 pip install pyautogui
