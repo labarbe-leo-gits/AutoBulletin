@@ -181,8 +181,8 @@ class user_interface():
 
             # Ajout des nouveaux labels avec les raccourcis affichés
             options_menu.add_command(label="Quitter", command=root.quit, accelerator="Alt+F4")
-            about.add_command(label="GitHub", command=links().GitOpen, accelerator="Ctrl+Maj+G")
-            about.add_command(label="MediaFire", command=links().MediaOpen, accelerator="Ctrl+Maj+M")
+            about.add_command(label="GitHub", command=links.GitOpen, accelerator="Ctrl+Maj+G")
+            about.add_command(label="MediaFire", command=links.MediaOpen, accelerator="Ctrl+Maj+M")
             hotkeys_menu.add_command(label="Afficher", command=lambda:ShowHotkeys(), accelerator="Ctrl+Maj+S")
             hotkeys_menu.add_command(label="Masquer", command=lambda:HideHotkeys(), accelerator="Ctrl+Maj+H")
         
