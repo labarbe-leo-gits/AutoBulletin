@@ -232,8 +232,18 @@ class user_interface():
         logs_menu.add_command(label="Config. du format")
         logs_menu.add_command(label="Préférences")
 
+        # Définition d'un menu déroulant dans le menu des Langues (voir + bas)
+        lang_menu = tk.Menu(options_menu, tearoff=0)
+
+        # Ajout de commandes
+        lang_menu.add_command(label="Français")
+        lang_menu.add_command(label="English")
+
         # Définition du menu des Logs
         options_menu.add_cascade(label="Logs", menu=logs_menu)
+
+        # Définition du menu des Langues
+        options_menu.add_cascade(label="Langues", menu=lang_menu)
 
         # Ajout de commandes du menu des options
         options_menu.add_separator()
@@ -248,7 +258,10 @@ class user_interface():
         about.add_command(label="À propos de l'application")
         about.add_separator()
         about.add_command(label="GitHub", command=links.GitOpen)
-        medfire = about.add_command(label="MediaFire", command=links.MediaOpen)
+        about.add_command(label="MediaFire", command=links.MediaOpen)
+        about.add_separator()
+        about.add_command(label="PayPal")
+
 
         # Ajout des 'sous-menu' en tant qu'éléments de la barre de menus
         menubar.add_cascade(label="Options", menu=options_menu)  
