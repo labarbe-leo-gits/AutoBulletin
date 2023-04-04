@@ -90,6 +90,9 @@ class hotkeys():
 
         # Ouvrir la page mediafire
         keyboard.add_hotkey('ctrl + maj + m', lambda:links.MediaOpen())
+
+        # Ouvrir la page de dons PayPal
+        keyboard.add_hotkey('ctrl + maj + p', lambda:links.PayOpen())
     
     # Définition d'une fonction pour afficher les raccourcis clavier créer précédement
     def show_hotkeys():
@@ -127,6 +130,9 @@ class hotkeys():
         hotkeys_menu.add_command(label="Afficher", command=lambda:ShowHotkeys(), accelerator=None)
         hotkeys_menu.add_command(label="Masquer", command=lambda:HideHotkeys(), accelerator=None)
 
+# Appel des raccourcis clavier
+hotkeys.hotkeys()
+
 # Définition de la classe contenant les liens et les fonctions correspondantes
 class links():
 
@@ -137,6 +143,9 @@ class links():
     # Définition d'une fonction pour ouvrir la page MediaFire du projet
     def MediaOpen():
         wb.open("https://mediafire.com/folder/8y3wuu514kdyh/Auto_Compl%C3%A9tion_Bulletins")
+
+    def PayOpen():
+        wb.open("https://paypal.me/labarbeleo")
 
 # Définition de la classe contenant les interfaces utilisateurs dans des fonctions correspondantes
 class user_interface():
@@ -260,11 +269,12 @@ class user_interface():
         about.add_command(label="GitHub", command=links.GitOpen)
         about.add_command(label="MediaFire", command=links.MediaOpen)
         about.add_separator()
-        about.add_command(label="PayPal")
+        about.add_command(label="PayPal", command=links.PayOpen)
 
 
         # Ajout des 'sous-menu' en tant qu'éléments de la barre de menus
-        menubar.add_cascade(label="Options", menu=options_menu)  
+        menubar.add_cascade(label="Options", menu=options_menu)
+        menubar.add_cascade(label="Données")  
         menubar.add_cascade(label="Fenêtres")
         menubar.add_cascade(label="À Propos", menu=about)
 
