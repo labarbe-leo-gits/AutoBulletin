@@ -145,7 +145,7 @@ class links():
         wb.open("https://mediafire.com/folder/8y3wuu514kdyh/Auto_Compl%C3%A9tion_Bulletins")
 
     def PayOpen():
-        wb.open("https://paypal.me/labarbeleo")
+        wb.open("https://www.paypal.com/donate/?hosted_button_id=RGWX6PU2FPCWU")
 
 # Définition de la classe contenant les interfaces utilisateurs dans des fonctions correspondantes
 class user_interface():
