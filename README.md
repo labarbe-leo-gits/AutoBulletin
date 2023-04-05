@@ -63,7 +63,8 @@ pip install pyautogui
 
 ## :link: Liens Complémentaires
 Page GitHub du projet : https://github.com/labarbe-leo-gits/AutoBulletin <br/>
-Page MediaFire : https://www.mediafire.com/folder/8y3wuu514kdyh/Auto_Complétion_Bulletins <br/>
+Page MediaFire (Code Source) : https://www.mediafire.com/folder/3plr6gtqb2yxn/AutoBulletinSourceCode <br/>
+Page MediaFire (Installer) : https://www.mediafire.com/folder/5kn1el6aieuvt/AutoBulletinInstall <br/>
 Site Web personnel : https://labarbe-leo-drivewebhosting.on.drv.tw
 
 ## :incoming_envelope: Contact & Copyrights
