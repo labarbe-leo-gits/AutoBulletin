@@ -1,0 +1,16 @@
+Options
+Customiser l'IU
+Raccourcis clavier
+Afficher
+Masquer
+Customiser
+Fenêtres au lancement
+MessageBox
+Logs
+Config. du format
+Préférences
+Langues
+Français
+English
+Obtenir de l'aide
+Quitter

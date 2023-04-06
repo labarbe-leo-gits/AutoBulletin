@@ -271,10 +271,27 @@ class user_interface():
         about.add_separator()
         about.add_command(label="PayPal", command=links.PayOpen)
 
+        # Création d'un sous menu à la barre principale
+        data = tk.Menu(menubar, tearoff=0)
+
+        # Sous menu de l'Historique
+        histo = tk.Menu(data, tearoff=0)
+
+        # Ajout de commandes pour l'historique
+        histo.add_command(label="Consulter")
+        histo.add_command(label="Supprimer")
+
+        # Ajout de commandes au menu
+        data.add_cascade(label="Historique", menu=histo)
+        data.add_separator()
+        data.add_command(label="Classes")
+        data.add_command(label="Appréciations")
+        data.add_separator()
+        data.add_command(label="Matière de l'enseignant")
 
         # Ajout des 'sous-menu' en tant qu'éléments de la barre de menus
         menubar.add_cascade(label="Options", menu=options_menu)
-        menubar.add_cascade(label="Données")  
+        menubar.add_cascade(label="Données", menu=data)  
         menubar.add_cascade(label="Fenêtres")
         menubar.add_cascade(label="À Propos", menu=about)
 
