@@ -83,9 +83,13 @@ appreciations = [f"{name} est {prono[2]} élève {prono[1]} fournissant des rés
                  f"Un trimestre noir pour {name}. Les résultats ne sont pas au rendez-vous creusant les lacunes ainsi qu'un travail personnel trop rare. Il faut vous ressaisir !",
                  f""]
 appreciations_fin_annee = []
-print(appreciations[6])
+#print(appreciations[6])
 
 # Mise en global de variable 'int'. Ces integer définissent le niveau accordé par chaque critère. Par défaut 0.
+
+global error_msg_console, compare_data
+error_msg_console = "Une erreur est survenue lors de l'entrée des valeurs. Voici un récapitulatif, vérifiez-y vos données et comparez les aux valeurs valides :"
+compare_data = f"\nRésumé :\nBavardages : {talk}\nSérieux : {serious}\nRésultats : {results}\nParticipation : {participation}\nDevoirs rendus/faits : {homework}\n\nDonnées valides :\nBavardages : BCP,M,P,ABS\nSérieux : y,n\nRésultats : TS,S,CA,NA\nParticipation : P,D,ABS\nDevoirs rendus/faits : y,n,sm"
 
 # print(app_serious[0])
 # Fonction de classification d'appréciations
@@ -93,12 +97,38 @@ def classing():
     global appreciations
     try :
         # Mettre à jour les listes dans des conditions bien spécifiques
+        app_class = ''
         if talk and talk == 'ABS' :
+            app_class = app_class + "TK_ABS_"
             if serious and serious == 'y' :
+                app_class = app_class + "SR_Y_"
                 if results and results == 'TS':
+                    app_class = app_class + "RS_TS_"
                     if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
                         if homework and homework == 'y':
-                            print(appreciations[0])
+                            app_class = app_class + 'HM_Y'
+                            print(app_class)
+                            #print(appreciations[0])
+            elif serious and serious == 'n' :
+                pass
+
+            else : 
+                print(error_msg_console)
+                print(compare_data)
+
+        elif talk and talk  == 'P' :
+            pass
+
+        elif talk and talk == 'M' :
+            pass
+
+        elif talk and talk == 'BCP':
+            pass
+
+        else :
+            print(error_msg_console)
+            print(compare_data)
 
 
     except Exception as e :
