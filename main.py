@@ -288,6 +288,24 @@ class user_interface():
         data.add_command(label="Appréciations")
         data.add_separator()
         data.add_command(label="Matière de l'enseignant")
+        data.add_separator()
+
+        # Menu de connexion
+        login = tk.Menu(data, tearoff=0)
+
+        # Ajout de commandes
+        login.add_command(label="Informations de connexion")
+        login.add_command(label="Lancer la connexion")
+
+        # Menu d'automatisation
+        auto = tk.Menu(data, tearoff=0)
+
+        # Ajout de commandes
+        auto.add_command(label="Initialiser le séquençage")
+        auto.add_command(label="Lancer le test")
+
+        data.add_cascade(label="Connexion Pronote", menu=login)
+        data.add_cascade(label="Automatisation", menu=auto)
 
         # Ajout des 'sous-menu' en tant qu'éléments de la barre de menus
         menubar.add_cascade(label="Options", menu=options_menu)

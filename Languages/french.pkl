@@ -14,3 +14,16 @@ Français
 English
 Obtenir de l'aide
 Quitter
+Données
+Historique
+Consulter
+Supprimer
+Classes
+Appréciations
+Matière de l'enseignant
+Connexion Pronote
+Informations de connexion
+Lancer la connexion
+Automatisation
+Initialiser le séquençage
+Lancer le test

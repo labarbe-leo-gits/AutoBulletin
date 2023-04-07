@@ -5,6 +5,8 @@
 # Script par LABARBE Léo,
 # LPC Nicolas Ledoux
 
+# L'algorithme peut sembler incompréhensible (je suis le premier à rien comprendre à mon propre travail...)
+
 # ---------------------
 
 # Import de librairies
@@ -96,7 +98,6 @@ compare_data = f"\nRésumé :\nBavardages : {talk}\nSérieux : {serious}\nRésul
 def classing():
     global appreciations
     try :
-        # Mettre à jour les listes dans des conditions bien spécifiques
         app_class = ''
         if talk and talk == 'ABS' :
             app_class = app_class + "TK_ABS_"
@@ -108,27 +109,857 @@ def classing():
                         app_class = app_class + "PTCP_P_"
                         if homework and homework == 'y':
                             app_class = app_class + 'HM_Y'
-                            print(app_class)
-                            #print(appreciations[0])
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                elif results and results == 'S':
+                    app_class = app_class + "RS_S_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"                    
+                elif results and results == 'CA':
+                    app_class = app_class + "RS_CA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"    
+                elif results and results == 'NA':
+                    app_class = app_class + "RS_NA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+
             elif serious and serious == 'n' :
-                pass
+                if results and results == 'TS':
+                    app_class = app_class + "RS_TS_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                elif results and results == 'S':
+                    app_class = app_class + "RS_S_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"                    
+                elif results and results == 'CA':
+                    app_class = app_class + "RS_CA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"    
+                elif results and results == 'NA':
+                    app_class = app_class + "RS_NA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+        elif talk and talk == 'P' :
+            app_class = app_class + "TK_ABS_"
+            if serious and serious == 'y' :
+                app_class = app_class + "SR_Y_"
+                if results and results == 'TS':
+                    app_class = app_class + "RS_TS_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                elif results and results == 'S':
+                    app_class = app_class + "RS_S_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"                    
+                elif results and results == 'CA':
+                    app_class = app_class + "RS_CA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"    
+                elif results and results == 'NA':
+                    app_class = app_class + "RS_NA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
 
-            else : 
-                print(error_msg_console)
-                print(compare_data)
-
-        elif talk and talk  == 'P' :
-            pass
+            elif serious and serious == 'n' :
+                if results and results == 'TS':
+                    app_class = app_class + "RS_TS_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                elif results and results == 'S':
+                    app_class = app_class + "RS_S_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"                    
+                elif results and results == 'CA':
+                    app_class = app_class + "RS_CA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"    
+                elif results and results == 'NA':
+                    app_class = app_class + "RS_NA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
 
         elif talk and talk == 'M' :
-            pass
+            app_class = app_class + "TK_ABS_"
+            if serious and serious == 'y' :
+                app_class = app_class + "SR_Y_"
+                if results and results == 'TS':
+                    app_class = app_class + "RS_TS_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                elif results and results == 'S':
+                    app_class = app_class + "RS_S_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"                    
+                elif results and results == 'CA':
+                    app_class = app_class + "RS_CA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"    
+                elif results and results == 'NA':
+                    app_class = app_class + "RS_NA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
 
-        elif talk and talk == 'BCP':
-            pass
+            elif serious and serious == 'n' :
+                if results and results == 'TS':
+                    app_class = app_class + "RS_TS_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                elif results and results == 'S':
+                    app_class = app_class + "RS_S_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"                    
+                elif results and results == 'CA':
+                    app_class = app_class + "RS_CA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"    
+                elif results and results == 'NA':
+                    app_class = app_class + "RS_NA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
 
-        else :
-            print(error_msg_console)
-            print(compare_data)
+        if talk and talk == 'BCP' :
+            app_class = app_class + "TK_ABS_"
+            if serious and serious == 'y' :
+                app_class = app_class + "SR_Y_"
+                if results and results == 'TS':
+                    app_class = app_class + "RS_TS_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                elif results and results == 'S':
+                    app_class = app_class + "RS_S_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"                    
+                elif results and results == 'CA':
+                    app_class = app_class + "RS_CA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"    
+                elif results and results == 'NA':
+                    app_class = app_class + "RS_NA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+
+            elif serious and serious == 'n' :
+                if results and results == 'TS':
+                    app_class = app_class + "RS_TS_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                elif results and results == 'S':
+                    app_class = app_class + "RS_S_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"                    
+                elif results and results == 'CA':
+                    app_class = app_class + "RS_CA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"    
+                elif results and results == 'NA':
+                    app_class = app_class + "RS_NA_"
+                    if participation and participation == 'P':
+                        app_class = app_class + "PTCP_P_"
+                        if homework and homework == 'y':
+                            app_class = app_class + 'HM_Y'
+                        elif homework and homework == 'n':
+                            app_class = app_class + 'HM_N'
+                        elif homework and homework == 'sm':
+                            app_class = appc_lass + 'HM_SM'                    
+                    elif participation and participation == "D":
+                        app_class = app_class + "PTCP_D_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+                    elif participation and participation == "ABS" :
+                        app_class = app_class + "PTCP_ABS_"
+                        if homework and homework == "y":
+                            app_class = app_class + "HM_Y"
+                        elif homework and homework == "n":
+                            app_class = app_class + "HM_N"
+                        elif homework and homework == "sm":
+                            app_class = app_class + "HM_SM"
+
+
+
 
 
     except Exception as e :
