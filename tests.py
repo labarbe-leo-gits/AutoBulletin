@@ -112,7 +112,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -138,7 +138,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -164,7 +164,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -190,7 +190,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -218,7 +218,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -244,7 +244,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -270,7 +270,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -296,7 +296,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -326,7 +326,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -352,7 +352,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -378,7 +378,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -404,7 +404,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -432,7 +432,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -458,7 +458,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -484,7 +484,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -510,7 +510,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -541,7 +541,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -567,7 +567,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -593,7 +593,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -619,7 +619,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -647,7 +647,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -673,7 +673,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -699,7 +699,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -725,7 +725,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -756,7 +756,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -782,7 +782,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -808,7 +808,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -834,7 +834,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -862,7 +862,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -888,7 +888,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -914,7 +914,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
@@ -940,7 +940,7 @@ def classing():
                         elif homework and homework == 'n':
                             app_class = app_class + 'HM_N'
                         elif homework and homework == 'sm':
-                            app_class = appc_lass + 'HM_SM'                    
+                            app_class = app_class + 'HM_SM'                    
                     elif participation and participation == "D":
                         app_class = app_class + "PTCP_D_"
                         if homework and homework == "y":
