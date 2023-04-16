@@ -233,6 +233,7 @@ class user_interface():
         options_menu.add_separator()
         options_menu.add_command(label="Fenêtres au lancement")
         options_menu.add_command(label="MessageBox")
+        options_menu.add_command(label="Sons")
 
         # Définition d'un menu déroulant dans le menu des Logs (voir + bas)
         logs_menu = tk.Menu(options_menu, tearoff=0)
