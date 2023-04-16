@@ -1,0 +1,3 @@
+refaire la deuxième sectiond 'about.py (la ou il y a la bannière mediafire) -> symétrie avec informations
+refaire le design du bouton paypal
+augmenter la taille des boutons snap, discord, etc...

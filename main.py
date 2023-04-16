@@ -163,7 +163,7 @@ class user_interface():
 
         # Icone de l'interface
         try :
-            root.iconbitmap("AppImg/AutoBulletinWinIcon.ico")
+            root.iconbitmap("AppImg/Win/.ico/Win.ico")
         
         # En cas d'erreur
         except Exception as e :
@@ -279,6 +279,7 @@ class user_interface():
 
         # Ajout de commandes pour l'historique
         histo.add_command(label="Consulter")
+        histo.add_separator()
         histo.add_command(label="Supprimer")
 
         # Ajout de commandes au menu
