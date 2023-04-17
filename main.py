@@ -215,9 +215,13 @@ class user_interface():
         # Ajout de choix au sous-menu
         ui_custom_options.add_command(label="Couleurs")
         ui_custom_options.add_command(label="Polices")
-        ui_custom_options.add_command(label="Détails")
+        ui_custom_options.add_command(label="Détails") # Détails correspond au relief, border (bd), justify, compound, anchor
+        ui_custom_options.add_separator()
+        ui_custom_options.add_command(label="Changer les icônes")
+        ui_custom_options.add_command(label="Changer les curseurs")
         ui_custom_options.add_separator()
         ui_custom_options.add_command(label="Positions des éléments")
+        ui_custom_options.add_command(label="Taille des éléments")
 
         # Ajout de la première commande de la barre pour customiser l'interface
         options_menu.add_cascade(label="Customiser l'IU", menu=ui_custom_options)
@@ -342,13 +346,15 @@ class user_interface():
 
         # Ajout de commandes
         login.add_command(label="Informations de connexion")
+        login.add_separator()
+        login.add_command(label="Lancer le séquençage de connexion")
         login.add_command(label="Lancer la connexion")
 
         # Menu d'automatisation
         auto = tk.Menu(data, tearoff=0)
 
         # Ajout de commandes
-        auto.add_command(label="Initialiser le séquençage")
+        auto.add_command(label="Lancer le séquençage (écriture)")
         auto.add_command(label="Lancer le test")
 
         data.add_cascade(label="Connexion Pronote", menu=login)
