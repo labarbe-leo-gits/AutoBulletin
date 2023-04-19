@@ -212,6 +212,13 @@ class user_interface():
         # Sous-menu de customisation
         ui_custom_options = tk.Menu(menubar, tearoff=0)
 
+        # Sous menu de test
+        test_menu = tk.Menu(menubar, tearoff=0)
+
+        # Ajout de commandes
+        test_menu.add_command(label="Lancer seule")
+        test_menu.add_command(label="Lancer avec édition")
+
         # Ajout de choix au sous-menu
         ui_custom_options.add_command(label="Couleurs")
         ui_custom_options.add_command(label="Polices")
@@ -222,6 +229,8 @@ class user_interface():
         ui_custom_options.add_separator()
         ui_custom_options.add_command(label="Positions des éléments")
         ui_custom_options.add_command(label="Taille des éléments")
+        ui_custom_options.add_separator()
+        ui_custom_options.add_cascade(label="Fenêtre de test", menu=test_menu)
 
         # Ajout de la première commande de la barre pour customiser l'interface
         options_menu.add_cascade(label="Customiser l'IU", menu=ui_custom_options)
@@ -363,7 +372,6 @@ class user_interface():
         # Ajout des 'sous-menu' en tant qu'éléments de la barre de menus
         menubar.add_cascade(label="Options", menu=options_menu)
         menubar.add_cascade(label="Données", menu=data)  
-        menubar.add_cascade(label="Fenêtres")
         menubar.add_cascade(label="À Propos", menu=about)
 
         # Fixation de la barre de menu à la fenêtre
