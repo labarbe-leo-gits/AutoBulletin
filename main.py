@@ -382,14 +382,14 @@ class user_interface():
             if lic_lim == 0 :
                 licence()
             else :
-                winsound.PlaySound('Sounds/AppDefault/521973__kastenfrosch__error.wav', winsound.SND_FILENAME)
+                winsound.PlaySound('Sounds/AppDefault/521973__kastenfrosch__error.wav', winsound.SND_ASYNC)
 
         def abt_check():
             global abt_lim
             if abt_lim == 0 :
                 user_interface.about_window()
             else :
-                winsound.PlaySound('Sounds/AppDefault/521973__kastenfrosch__error.wav', winsound.SND_FILENAME)
+                winsound.PlaySound('Sounds/AppDefault/521973__kastenfrosch__error.wav', winsound.SND_ASYNC)
 
         # Ajout de commandes à ce menu
         about.add_command(label="À propos de l'application", command=abt_check)
