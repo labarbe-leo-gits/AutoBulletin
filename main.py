@@ -9,6 +9,7 @@
 import tkinter as tk
 import tkinter.ttk as ttk
 from tkinter import messagebox
+import tkinter.scrolledtext as scrolledtext
 import pickle
 import webbrowser as wb
 import logging
