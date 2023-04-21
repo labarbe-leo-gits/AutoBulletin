@@ -15,14 +15,19 @@ import webbrowser as wb
 import logging
 import keyboard
 import msvcrt as m
+import winsound
 
 # Limiteur de fenêtre 'à propos'
-global win_lim
-win_lim = 0
+global abt_lim
+abt_lim = 0
 
+# Limiteur de fenêtre 'Licence'
+global lic_lim
+lic_lim = 0
+
+# Classe pour une fenêtre au survol d'un élément
+# Credit : squareRoot17 (StackOverflow)
 class ToolTipBox():
-
-#root = Tk()
 
     class ToolTip(object):
 
@@ -62,14 +67,6 @@ class ToolTipBox():
             toolTip.hidetip()
         widget.bind('<Enter>', enter)
         widget.bind('<Leave>', leave)
-
-#button = Button(root, text = 'click mem')
-#button.pack()
-#CreateToolTip(button, text = 'Hello World\n'
-#                 'This is how tip looks like.'
-#                 'Best part is, it\'s not a menu.\n'
-#                 'Purely tipbox.')
-#root.mainloop()
 
 # Définition de la clase contenant le setup des logs
 class logs_config():
@@ -228,6 +225,9 @@ class links():
     def cursorsFlyn():
         wb.open("https://www.cursor.cc/?action=icon_list&user_id=149797")
 
+    def cursorssylent():
+        wb.open("https://www.cursor.cc/?action=icon_list&user_id=154144")
+
     # Définition d'une fonction pour ouvrir la page de flaticon
     def flaticopen():
         wb.open("https://www.flaticon.com")
@@ -238,7 +238,7 @@ class user_interface():
     # Définition de la fonction pour l'interface principale
     def main_window():
 
-        global win_lim
+        global abt_lim, lic_lim
     
         # Définition & propriétés de la fenêtre
         global root
@@ -374,19 +374,26 @@ class user_interface():
         # Création d'un autre 'sous-menu' a la barre principale
         about = tk.Menu(menubar, tearoff=0)
 
-        def check_availability():
+        def licence():
+            user_interface.text_based("Licence", "Licence")
 
-            global win_lim
-            print(win_lim)
-    
-            if win_lim == 0 :
+        def lic_check():
+            global lic_lim
+            if lic_lim == 0 :
+                licence()
+            else :
+                winsound.PlaySound('Sounds/AppDefault/521973__kastenfrosch__error.wav', winsound.SND_FILENAME)
+
+        def abt_check():
+            global abt_lim
+            if abt_lim == 0 :
                 user_interface.about_window()
             else :
-                print("nope bbc :D")
+                winsound.PlaySound('Sounds/AppDefault/521973__kastenfrosch__error.wav', winsound.SND_FILENAME)
 
         # Ajout de commandes à ce menu
-        about.add_command(label="À propos de l'application", command=check_availability)
-        about.add_command(label="Licence")
+        about.add_command(label="À propos de l'application", command=abt_check)
+        about.add_command(label="Licence", command=lic_check)
         about.add_separator()
         about.add_command(label="GitHub", command=links.GitOpen)
         about.add_command(label="MediaFire", command=links.MediaOpen)
@@ -863,7 +870,7 @@ class user_interface():
 
     def about_window():
 
-        global win_lim
+        global abt_lim
         
         top = tk.Toplevel()
 
@@ -984,6 +991,28 @@ class user_interface():
         CursorsUsername.configure(foreground="#5662eb")
         CursorsUsername.configure(text='''FlynMaker49''', command=links.cursorsFlyn)
 
+        Virgule = tk.Label(top)
+        Virgule.place(relx=0.286, rely=0.647, height=21, width=15)
+        Virgule.configure(activebackground="#f9f9f9")
+        Virgule.configure(anchor='w')
+        Virgule.configure(background="#d9d9d9")
+        Virgule.configure(compound='left')
+        Virgule.configure(disabledforeground="#a3a3a3")
+        Virgule.configure(foreground="#000000")
+        Virgule.configure(highlightbackground="#d9d9d9")
+        Virgule.configure(highlightcolor="black")
+        Virgule.configure(text=''',''')
+
+        CursorsUsername2 = tk.Button(top)
+        CursorsUsername2.place(relx=0.298, rely=0.635, height=21, width=76)
+        CursorsUsername2.configure(activebackground="#d9d9d9", activeforeground="#818CFF", bd=0, relief="flat")
+        CursorsUsername2.configure(anchor='w', cursor="@AdditionalCursors/pointer.cur")
+        CursorsUsername2.configure(background="#d9d9d9")
+        CursorsUsername2.configure(compound='left')
+        CursorsUsername2.configure(font="-family {Segoe UI} -size 9 -underline 1")
+        CursorsUsername2.configure(foreground="#5662eb")
+        CursorsUsername2.configure(text='''sylent''', command=links.cursorssylent)
+
         Sounds = tk.Label(top)
         Sounds.place(relx=0.035, rely=0.734, height=21, width=104)
         Sounds.configure(activebackground="#f9f9f9")
@@ -1052,16 +1081,61 @@ class user_interface():
         ImageLink.configure(foreground="#5662eb")
         ImageLink.configure(text='''Flaticon''', command=links.flaticopen)
 
-        win_lim = win_lim + 1
-
-        print(win_lim)
+        abt_lim = abt_lim + 1
 
         def delete_win_and_add():
-            global win_lim
+            global abt_lim
             top.destroy()
-            win_lim = win_lim - 1
+            abt_lim = abt_lim - 1
 
         top.protocol("WM_DELETE_WINDOW", delete_win_and_add)
+
+        top.mainloop()
+
+    def text_based(title, content):
+
+        global lic_lim
+        
+        top = tk.Toplevel()
+        top.geometry("410x225")
+        top.resizable(0,0)
+        top.iconbitmap("AppImg/win/.ico/Licence.ico")
+        top.title(title)
+        top.configure(background="#d9d9d9", cursor="@AdditionalCursors/default.cur")
+
+        TextContainer = scrolledtext.ScrolledText(top, undo=True)
+        TextContainer.place(relx=0.017, rely=0.044, relheight=0.907, relwidth=0.961)
+        TextContainer.configure(background="#fafafa")
+        TextContainer.configure(font="TkTextFont")
+        TextContainer.configure(foreground="black")
+        TextContainer.configure(insertbackground="black")
+        TextContainer.configure(selectbackground="#505050")
+        TextContainer.configure(selectforeground="white")
+        TextContainer.configure(wrap="word", cursor="@AdditionalCursors/write.cur")
+
+        if content == 'Licence':
+            try:
+
+                file = open("Data/Licence.txt", "r")
+                contents = file.read()
+                file.close()
+
+                lic_lim = lic_lim+1
+
+                def delete_win_and_add():
+                    global lic_lim
+                    top.destroy()
+                    lic_lim = lic_lim - 1
+
+                top.protocol("WM_DELETE_WINDOW", delete_win_and_add)
+
+            except:
+
+                # output an error message for the user
+                print("Error reading file.")
+            TextContainer.insert("1.0", contents)
+        elif content == 'History':
+            TextContainer.insert("1.0", "Historique des actions")
 
         top.mainloop()
 

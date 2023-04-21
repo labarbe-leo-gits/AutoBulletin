@@ -957,7 +957,8 @@ def classing():
                             app_class = app_class + "HM_N"
                         elif homework and homework == "sm":
                             app_class = app_class + "HM_SM"
-
+    
+        print(app_class)
 
 
 
