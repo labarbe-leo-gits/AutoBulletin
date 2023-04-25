@@ -10,10 +10,10 @@ import tkinter as tk
 import tkinter.ttk as ttk
 from tkinter import messagebox
 import tkinter.scrolledtext as scrolledtext
+from tkinter import filedialog
 import pickle
 import webbrowser as wb
 import logging
-import keyboard
 import msvcrt as m
 import winsound
 
@@ -124,67 +124,8 @@ class logs_config():
 class pickle_data():
     pass
 
-# logs_config.errors.error("hi")
-
-# Définition de la classe pour les raccourcis clavier contenant les fonctions correspondantes
-class hotkeys():
-    
-    # Définition d'une fonction créant des raccourcis clavier avec le module 'keyboard'
-    def hotkeys():
-
-        # Définition des raccourcis clavier custom
-        keyboard.add_hotkey('ctrl + shift + z', lambda:test())
-
-        # Ouvrir la fenêtre d'informations d'application
-        keyboard.add_hotkey('ctrl + i', lambda:print("about app"))
-
-        # Ouvrir la page github
-        keyboard.add_hotkey('ctrl + maj + g', lambda:links.GitOpen())
-
-        # Ouvrir la page mediafire
-        keyboard.add_hotkey('ctrl + maj + m', lambda:links.MediaOpen())
-
-        # Ouvrir la page de dons PayPal
-        keyboard.add_hotkey('ctrl + maj + p', lambda:links.PayOpen())
-    
-    # Définition d'une fonction pour afficher les raccourcis clavier créer précédement
-    def show_hotkeys():
-
-        #lambda:hotkeys().show_hotkeys()
-
-        # Suppression des labels existants
-        options_menu.delete("Quitter")
-        about.delete("GitHub")
-        about.delete("MediaFire")
-        hotkeys_menu.delete("Afficher")
-        hotkeys_menu.delete("Masquer")
-
-        # Ajout des nouveaux labels avec les raccourcis affichés
-        options_menu.add_command(label="Quitter", command=root.quit, accelerator="Alt+F4")
-        about.add_command(label="GitHub", command=links.GitOpen, accelerator="Ctrl+Maj+G")
-        about.add_command(label="MediaFire", command=links.MediaOpen, accelerator="Ctrl+Maj+M")
-        hotkeys_menu.add_command(label="Afficher", command=lambda:ShowHotkeys(), accelerator="Ctrl+Maj+S")
-        hotkeys_menu.add_command(label="Masquer", command=lambda:HideHotkeys(), accelerator="Ctrl+Maj+H")
-    
-    # Définition d'une fonction pour masquer les raccourcis clavier créer précedement
-    def HideHotkeys():
-
-        # Suppression des labels existants
-        options_menu.delete("Quitter")
-        about.delete("GitHub")
-        about.delete("MediaFire")
-        hotkeys_menu.delete("Afficher")
-        hotkeys_menu.delete("Masquer")
-
-        # Ajout des nouveaux labels avec les raccourcis affichés
-        options_menu.add_command(label="Quitter", command=root.quit, accelerator=None)
-        about.add_command(label="GitHub", command=links.GitOpen, accelerator=None)
-        about.add_command(label="MediaFire", command=links.MediaOpen, accelerator=None)
-        hotkeys_menu.add_command(label="Afficher", command=lambda:ShowHotkeys(), accelerator=None)
-        hotkeys_menu.add_command(label="Masquer", command=lambda:HideHotkeys(), accelerator=None)
-
-# Appel des raccourcis clavier
-hotkeys.hotkeys()
+#logs_config.errors.error("hi")
+#logs_config.informations.info("cool info :D")
 
 # Définition de la classe contenant les liens et les fonctions correspondantes
 class links():
@@ -287,57 +228,6 @@ class user_interface():
 
         # Ajout de la première commande de la barre pour customiser l'interface
         options_menu.add_cascade(label="Customiser l'IU", menu=ui_custom_options)
-
-        # Définition d'une fonction pour afficher les raccourcis dans les menus
-        def ShowHotkeys():
-
-            # Suppression des labels existants
-            options_menu.delete("Quitter")
-            about.delete("GitHub")
-            about.delete("MediaFire")
-            hotkeys_menu.delete("Afficher")
-            hotkeys_menu.delete("Masquer")
-
-            # Ajout des nouveaux labels avec les raccourcis affichés
-            options_menu.add_command(label="Quitter", command=root.quit, accelerator="Alt+F4")
-            about.add_command(label="GitHub", command=links.GitOpen, accelerator="Ctrl+Maj+G")
-            about.add_command(label="MediaFire", command=links.MediaOpen, accelerator="Ctrl+Maj+M")
-            hotkeys_menu.add_command(label="Afficher", command=lambda:ShowHotkeys(), accelerator="Ctrl+Maj+S")
-            hotkeys_menu.add_command(label="Masquer", command=lambda:HideHotkeys(), accelerator="Ctrl+Maj+H")
-        
-        def HideHotkeys():
-
-            # Suppression des labels existants
-            options_menu.delete("Quitter")
-            about.delete("GitHub")
-            about.delete("MediaFire")
-            hotkeys_menu.delete("Afficher")
-            hotkeys_menu.delete("Masquer")
-
-            # Ajout des nouveaux labels avec les raccourcis affichés
-            options_menu.add_command(label="Quitter", command=root.quit, accelerator=None)
-            about.add_command(label="GitHub", command=links.GitOpen, accelerator=None)
-            about.add_command(label="MediaFire", command=links.MediaOpen, accelerator=None)
-            hotkeys_menu.add_command(label="Afficher", command=lambda:ShowHotkeys(), accelerator=None)
-            hotkeys_menu.add_command(label="Masquer", command=lambda:HideHotkeys(), accelerator=None)
-
-        # Afficher les raccourcis clavier
-        keyboard.add_hotkey('ctrl + maj + s', lambda:ShowHotkeys())
-
-        # Cacher les raccourcis clavier
-        keyboard.add_hotkey('ctrl + maj + h', lambda:HideHotkeys())
-
-        # Définition d'un menu déroulant dans le menu des Raccourcis Clavier (voir + bas)
-        hotkeys_menu = tk.Menu(options_menu, tearoff=0)
-
-        # Ajout de commandes
-        hotkeys_menu.add_command(label="Afficher", command=ShowHotkeys)
-        hotkeys_menu.add_command(label="Masquer", command=HideHotkeys)
-        hotkeys_menu.add_separator()
-        hotkeys_menu.add_command(label="Customiser")
-
-        # Définition du menu des Raccourcis Clavier
-        options_menu.add_cascade(label="Raccoucis clavier", menu=hotkeys_menu)
 
         # Ajout de commandes dans le menu des options
         options_menu.add_separator()
